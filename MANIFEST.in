@@ -1,0 +1,8 @@
+include CHANGELOG.rst
+include LICENSE.txt
+include README.rst
+include requirements/base.in
+include requirements/constraints.txt
+include eia.py
+recursive-include verifiers *.html *.png *.gif *.js *.css *.jpg *.jpeg *.svg *.py
+recursive-include loncapa *.html *.png *.gif *.js *.css *.jpg *.jpeg *.svg *.py
