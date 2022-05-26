@@ -1,0 +1,15 @@
+[run]
+data_file = .coverage
+source = loncapa, verifiers, eia
+branch = true
+relative_files = True
+
+[report]
+ignore_errors = True
+
+[html]
+title = Calc Python Test Coverage Report
+directory = cover
+
+[xml]
+output = coverage.xml
