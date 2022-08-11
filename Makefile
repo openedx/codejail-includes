@@ -50,7 +50,7 @@ requirements:   ## install development environment requirements
 	pip install -qr requirements/dev.txt --exists-action w
 
 tests: ## Run tests and generate coverage report
-    pytest
+	pytest
 
 quality: ## check coding style with pycodestyle and pylint
 	pylint loncapa verifiers eia
