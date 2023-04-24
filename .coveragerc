@@ -1,5 +1,5 @@
 [run]
-data_file = .coverage
+data_file = coverage.xml
 source = loncapa, verifiers, eia
 branch = true
 relative_files = True
