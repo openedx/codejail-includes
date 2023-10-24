@@ -4,34 +4,26 @@
 #
 #    make upgrade
 #
-astroid==2.15.4
+astroid==3.0.1
     # via
     #   -r requirements/quality.txt
     #   pylint
     #   pylint-celery
-bleach==6.0.0
-    # via
-    #   -r requirements/quality.txt
-    #   readme-renderer
-build==0.10.0
+build==1.0.3
     # via
     #   -r requirements/pip-tools.txt
     #   pip-tools
-certifi==2022.12.7
+certifi==2023.7.22
     # via
     #   -r requirements/quality.txt
     #   requests
-cffi==1.15.1
-    # via
-    #   -r requirements/quality.txt
-    #   cryptography
-chardet==5.1.0
+chardet==5.2.0
     # via diff-cover
-charset-normalizer==3.1.0
+charset-normalizer==3.3.1
     # via
     #   -r requirements/quality.txt
     #   requests
-click==8.1.3
+click==8.1.7
     # via
     #   -r requirements/pip-tools.txt
     #   -r requirements/quality.txt
@@ -43,39 +35,36 @@ click-log==0.4.0
     # via
     #   -r requirements/quality.txt
     #   edx-lint
-code-annotations==1.3.0
+code-annotations==1.5.0
     # via
     #   -r requirements/quality.txt
     #   edx-lint
-coverage[toml]==7.2.3
+coverage[toml]==7.3.2
     # via
     #   -r requirements/quality.txt
+    #   coverage
     #   pytest-cov
-cryptography==40.0.2
-    # via
-    #   -r requirements/quality.txt
-    #   secretstorage
-diff-cover==7.5.0
+diff-cover==7.7.0
     # via -r requirements/dev.in
-dill==0.3.6
+dill==0.3.7
     # via
     #   -r requirements/quality.txt
     #   pylint
-distlib==0.3.6
+distlib==0.3.7
     # via
     #   -r requirements/ci.txt
     #   virtualenv
-docutils==0.19
+docutils==0.20.1
     # via
     #   -r requirements/quality.txt
     #   readme-renderer
-edx-lint==5.3.4
+edx-lint==5.3.6
     # via -r requirements/quality.txt
-exceptiongroup==1.1.1
+exceptiongroup==1.1.3
     # via
     #   -r requirements/quality.txt
     #   pytest
-filelock==3.12.0
+filelock==3.12.4
     # via
     #   -r requirements/ci.txt
     #   tox
@@ -84,12 +73,14 @@ idna==3.4
     # via
     #   -r requirements/quality.txt
     #   requests
-importlib-metadata==6.6.0
+importlib-metadata==6.8.0
     # via
+    #   -r requirements/pip-tools.txt
     #   -r requirements/quality.txt
+    #   build
     #   keyring
     #   twine
-importlib-resources==5.12.0
+importlib-resources==6.1.0
     # via
     #   -r requirements/quality.txt
     #   keyring
@@ -101,33 +92,24 @@ isort==5.12.0
     # via
     #   -r requirements/quality.txt
     #   pylint
-jaraco-classes==3.2.3
+jaraco-classes==3.3.0
     # via
     #   -r requirements/quality.txt
     #   keyring
-jeepney==0.8.0
-    # via
-    #   -r requirements/quality.txt
-    #   keyring
-    #   secretstorage
 jinja2==3.1.2
     # via
     #   -r requirements/quality.txt
     #   code-annotations
     #   diff-cover
-keyring==23.13.1
+keyring==24.2.0
     # via
     #   -r requirements/quality.txt
     #   twine
-lazy-object-proxy==1.9.0
-    # via
-    #   -r requirements/quality.txt
-    #   astroid
-markdown-it-py==2.2.0
+markdown-it-py==3.0.0
     # via
     #   -r requirements/quality.txt
     #   rich
-markupsafe==2.1.2
+markupsafe==2.1.3
     # via
     #   -r requirements/quality.txt
     #   jinja2
@@ -139,11 +121,15 @@ mdurl==0.1.2
     # via
     #   -r requirements/quality.txt
     #   markdown-it-py
-more-itertools==9.1.0
+more-itertools==10.1.0
     # via
     #   -r requirements/quality.txt
     #   jaraco-classes
-packaging==23.1
+nh3==0.2.14
+    # via
+    #   -r requirements/quality.txt
+    #   readme-renderer
+packaging==23.2
     # via
     #   -r requirements/ci.txt
     #   -r requirements/pip-tools.txt
@@ -155,19 +141,19 @@ pbr==5.11.1
     # via
     #   -r requirements/quality.txt
     #   stevedore
-pip-tools==6.13.0
+pip-tools==7.3.0
     # via -r requirements/pip-tools.txt
 pkginfo==1.9.6
     # via
     #   -r requirements/quality.txt
     #   twine
-platformdirs==3.2.0
+platformdirs==3.11.0
     # via
     #   -r requirements/ci.txt
     #   -r requirements/quality.txt
     #   pylint
     #   virtualenv
-pluggy==1.0.0
+pluggy==1.3.0
     # via
     #   -r requirements/ci.txt
     #   -r requirements/quality.txt
@@ -178,21 +164,17 @@ py==1.11.0
     # via
     #   -r requirements/ci.txt
     #   tox
-pycodestyle==2.10.0
+pycodestyle==2.11.1
     # via -r requirements/quality.txt
-pycparser==2.21
-    # via
-    #   -r requirements/quality.txt
-    #   cffi
 pydocstyle==6.3.0
     # via -r requirements/quality.txt
-pygments==2.15.1
+pygments==2.16.1
     # via
     #   -r requirements/quality.txt
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==2.17.2
+pylint==3.0.2
     # via
     #   -r requirements/quality.txt
     #   edx-lint
@@ -203,11 +185,11 @@ pylint-celery==0.3
     # via
     #   -r requirements/quality.txt
     #   edx-lint
-pylint-django==2.5.3
+pylint-django==2.5.5
     # via
     #   -r requirements/quality.txt
     #   edx-lint
-pylint-plugin-utils==0.7
+pylint-plugin-utils==0.8.2
     # via
     #   -r requirements/quality.txt
     #   pylint-celery
@@ -216,30 +198,30 @@ pyproject-hooks==1.0.0
     # via
     #   -r requirements/pip-tools.txt
     #   build
-pytest==7.3.1
+pytest==7.4.2
     # via
     #   -r requirements/quality.txt
     #   pytest-cov
-pytest-cov==4.0.0
+pytest-cov==4.1.0
     # via -r requirements/quality.txt
 python-slugify==8.0.1
     # via
     #   -r requirements/quality.txt
     #   code-annotations
-pyyaml==6.0
+pyyaml==6.0.1
     # via
     #   -r requirements/quality.txt
     #   code-annotations
-readme-renderer==37.3
+readme-renderer==42.0
     # via
     #   -r requirements/quality.txt
     #   twine
-requests==2.28.2
+requests==2.31.0
     # via
     #   -r requirements/quality.txt
     #   requests-toolbelt
     #   twine
-requests-toolbelt==0.10.1
+requests-toolbelt==1.0.0
     # via
     #   -r requirements/quality.txt
     #   twine
@@ -247,26 +229,21 @@ rfc3986==2.0.0
     # via
     #   -r requirements/quality.txt
     #   twine
-rich==13.3.4
+rich==13.6.0
     # via
     #   -r requirements/quality.txt
     #   twine
-secretstorage==3.3.3
-    # via
-    #   -r requirements/quality.txt
-    #   keyring
 six==1.16.0
     # via
     #   -r requirements/ci.txt
     #   -r requirements/quality.txt
-    #   bleach
     #   edx-lint
     #   tox
 snowballstemmer==2.2.0
     # via
     #   -r requirements/quality.txt
     #   pydocstyle
-stevedore==5.0.0
+stevedore==5.1.0
     # via
     #   -r requirements/quality.txt
     #   code-annotations
@@ -281,11 +258,12 @@ tomli==2.0.1
     #   -r requirements/quality.txt
     #   build
     #   coverage
+    #   pip-tools
     #   pylint
     #   pyproject-hooks
     #   pytest
     #   tox
-tomlkit==0.11.7
+tomlkit==0.12.1
     # via
     #   -r requirements/quality.txt
     #   pylint
@@ -293,40 +271,30 @@ tox==3.28.0
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/ci.txt
-    #   tox-battery
-tox-battery==0.6.1
-    # via -r requirements/dev.in
 twine==4.0.2
     # via -r requirements/quality.txt
-typing-extensions==4.5.0
+typing-extensions==4.8.0
     # via
     #   -r requirements/quality.txt
     #   astroid
     #   pylint
     #   rich
-urllib3==1.26.15
+urllib3==2.0.7
     # via
     #   -r requirements/quality.txt
     #   requests
     #   twine
-virtualenv==20.22.0
+virtualenv==20.24.6
     # via
     #   -r requirements/ci.txt
     #   tox
-webencodings==0.5.1
-    # via
-    #   -r requirements/quality.txt
-    #   bleach
-wheel==0.40.0
+wheel==0.41.2
     # via
     #   -r requirements/pip-tools.txt
     #   pip-tools
-wrapt==1.15.0
+zipp==3.17.0
     # via
-    #   -r requirements/quality.txt
-    #   astroid
-zipp==3.15.0
-    # via
+    #   -r requirements/pip-tools.txt
     #   -r requirements/quality.txt
     #   importlib-metadata
     #   importlib-resources
