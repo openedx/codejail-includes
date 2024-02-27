@@ -16,7 +16,7 @@ jobs:
       matrix:
         os: [ubuntu-20.04]
         python-version: ['3.8', '3.12']
-        toxenv: ["quality", 'py38', 'py312']
+        toxenv: ["quality", '38', '312']
 
     steps:
       - uses: actions/checkout@v2
