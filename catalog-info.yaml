@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: codejail-includes
+  description: A set of utility modules available in the sandbox environment for course authors to use.
+  annotations:
+    openedx.org/arch-interest-groups: moisesgsalas
+  links:
+    - url: https://github.com/openedx/codejail-includes
+      title: Source Code
+      icon: Code
+spec:
+  owner: user:moisesgsalas
+  type: library
+  lifecycle: production
+  subcomponentOf: codejail
