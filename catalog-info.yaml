@@ -5,10 +5,6 @@ metadata:
   description: A set of utility modules available in the sandbox environment for course authors to use.
   annotations:
     openedx.org/arch-interest-groups: moisesgsalas
-  links:
-    - url: https://github.com/openedx/codejail-includes
-      title: Source Code
-      icon: Code
 spec:
   owner: user:moisesgsalas
   type: library
