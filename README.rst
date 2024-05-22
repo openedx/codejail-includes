@@ -1,10 +1,17 @@
 codejail-includes
-=============================
+=================
 
 |pypi-badge| |license-badge|
 
-CodeJail manages execution of untrusted code in secure sandboxes. It is designed primarily for Python execution,
-but can be used for other languages as well.
+
+A set of utility modules available in secure sandboxes for course authors to
+use.
+
+``codejail-includes`` is the result of extracting utility modules installed
+into the codejail sandbox environment directly from edx-platform into it's
+own separate package.
+
+More in-depth context can be found in `[BOM-2579] Dissolve Sub-Projects in edx-platform <https://openedx.atlassian.net/browse/BOM-2579>`_
 
 Documentation
 -------------
