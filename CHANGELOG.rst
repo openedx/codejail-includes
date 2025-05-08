@@ -16,6 +16,14 @@ Unreleased
 
 *
 
+[1.1.0] - 2023-10-04
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Changed
+_______
+
+* Dropped support for Python 3.8 and added support for Python 3.12.
+
 [1.0.0] - 2022-05-17
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -24,4 +32,3 @@ _____
 
 * First release on PyPI.
 * codejail includes moved from edx-platform to individual pypi package.
-
