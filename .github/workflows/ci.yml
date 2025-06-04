@@ -16,7 +16,7 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         python-version: ['3.11', '3.12']
-        toxenv: ["py311", "py312", "quality"]
+        toxenv: ['default', 'quality']
     steps:
       - uses: actions/checkout@v4
       - name: setup python
@@ -31,12 +31,18 @@ jobs:
         run: pip install -r requirements/ci.txt
 
       - name: Run Tests
-        env:
-          TOXENV: ${{ matrix.toxenv }}
-        run: tox
+        run: |
+          if [ "${{ matrix.toxenv }}" = "default" ]; then
+            PYVER=${{ matrix.python-version }}
+            TOXENV=py${PYVER//./}
+          else
+            TOXENV=${{ matrix.toxenv }}
+          fi
+          echo "Resolved TOXENV=$TOXENV"
+          TOXENV=$TOXENV tox
 
       - name: Run coverage
-        if: matrix.python-version == '3.12' && matrix.toxenv == 'py312'
+        if: matrix.python-version == '3.12' && matrix.toxenv == 'default'
         uses: codecov/codecov-action@v5
         with:
           flags: unittests
