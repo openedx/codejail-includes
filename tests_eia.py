@@ -2,7 +2,7 @@
 
 import unittest
 
-from eia import *
+from eia import iseia, E48, E96, E192
 
 
 class Test_Eia(unittest.TestCase):

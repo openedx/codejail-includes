@@ -26,8 +26,6 @@ values are (x, y) coordinates of centers of dragged images.
 
 
 import json
-import six
-from six.moves import zip
 
 
 def flat_user_answer(user_answer):
@@ -104,8 +102,8 @@ class PositionsCompare(list):
                 isinstance(other[0], (list, int, float))):
             return self.coordinate_positions_compare(other)
 
-        elif (isinstance(self[0], (six.text_type, str)) and
-              isinstance(other[0], (six.text_type, str))):
+        elif (isinstance(self[0], str) and
+              isinstance(other[0], str)):
             return ''.join(self) == ''.join(other)
         else:  # improper argument types: no (float / int or lists of list
             #and float / int pair) or two string / unicode lists pair
