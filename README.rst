@@ -30,7 +30,7 @@ One Time Setup
   cd codejail-includes
 
   # Set up a virtualenv using virtualenvwrapper with the same name as the repo and activate it
-  mkvirtualenv -p python3.11 codejail-includes
+  mkvirtualenv -p python3.12 codejail-includes
 
 
 Every time you develop something in this repo
