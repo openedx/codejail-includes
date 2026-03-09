@@ -7,7 +7,7 @@ import sys
 
 from setuptools import setup
 
-VERSION = '2.0.1'
+VERSION = '3.0.0'
 
 
 def load_requirements(*requirements_paths):
