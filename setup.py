@@ -7,7 +7,7 @@ import sys
 
 from setuptools import setup
 
-VERSION = '2.0.0'
+VERSION = '3.0.0'
 
 
 def load_requirements(*requirements_paths):
@@ -63,7 +63,7 @@ setup(
     ],
     install_requires=load_requirements('requirements/base.in'),
     include_package_data=True,
-    python_requires=">=3.11",
+    python_requires=">=3.12",
     license="AGPL 3.0",
     zip_safe=False,
     keywords='Python edx',
@@ -73,7 +73,6 @@ setup(
         'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: 3.12',
     ],
 )
