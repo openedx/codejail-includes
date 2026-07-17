@@ -57,6 +57,7 @@ quality = [
     "pycodestyle",
     "pydocstyle",
     "pylint",
+    "twine",
 ]
 doc = [
     {include-group = "test"},
@@ -75,6 +76,7 @@ dev = [
     {include-group = "quality"},
     {include-group = "doc"},
     {include-group = "ci"},
+    "diff-cover",
 ]
 
 # uv configuration
