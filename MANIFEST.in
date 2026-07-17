@@ -1,5 +1,3 @@
-include LICENSE
-include README.rst
 include src/eia.py
 recursive-include src/verifiers *.html *.png *.gif *.js *.css *.jpg *.jpeg *.svg *.py
 recursive-include src/loncapa *.html *.png *.gif *.js *.css *.jpg *.jpeg *.svg *.py
