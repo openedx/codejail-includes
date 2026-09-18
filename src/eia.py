@@ -14,9 +14,6 @@ http://en.wikipedia.org/wiki/Electronic_color_code
 
 import math
 import numbers
-from importlib.metadata import version
-
-__version__ = version("codejail-includes")
 
 E6 = [10, 15, 22, 33, 47, 68]
 
