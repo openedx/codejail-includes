@@ -1,3 +1,5 @@
+include CHANGELOG.rst
+
 # Exclude development, test, and documentation folders
 prune .github
 prune docs

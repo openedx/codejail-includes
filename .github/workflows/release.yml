@@ -39,6 +39,7 @@ jobs:
           # We create it ourselves in the next step so that the distributions
           # are attached before the release is published. See that step for why.
           vcs_release: "false"
+          changelog: "false"
 
       # The openedx org has immutable releases enabled, which freezes a release's
       # assets the moment it is published, so assets cannot be attached
