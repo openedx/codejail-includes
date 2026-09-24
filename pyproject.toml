@@ -107,21 +107,6 @@ constraint-dependencies = [
 uv_constraints = [
 ]
 
-[tool.coverage.run]
-source = ["loncapa", "verifiers", "eia"]
-branch = true
-relative_files = true
-
-[tool.coverage.report]
-ignore_errors = true
-
-[tool.coverage.html]
-title = "Calc Python Test Coverage Report"
-directory = "cover"
-
-[tool.coverage.xml]
-output = "coverage.xml"
-
 [tool.isort]
 include_trailing_comma = true
 indent = "    "
