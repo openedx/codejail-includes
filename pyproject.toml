@@ -108,7 +108,7 @@ uv_constraints = [
 ]
 
 [tool.coverage.run]
-source_pkgs = ["loncapa", "verifiers", "eia"]
+source = ["src"]
 branch = true
 relative_files = true
 
