@@ -40,7 +40,7 @@ tests: ## Run tests and generate coverage report
 	coverage xml
 
 quality: ## check coding style with pycodestyle and pylint
-	pylint loncapa verifiers eia
+	pylint src/loncapa src/verifiers src/eia.py
 
 test-all: quality ## run tests on every supported Python/Django combination
 	tox
